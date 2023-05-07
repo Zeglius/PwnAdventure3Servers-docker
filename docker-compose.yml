@@ -12,6 +12,7 @@ services:
     build: ./master_docker
     image: pwn3_master
     container_name: pwn3_master
+    restart: unless-stopped
     hostname: master.pwn3
     ports:
       - "3333:3333"
